@@ -9,7 +9,7 @@ void main(void)
 	y=5;
 	for(i=1;i<=9;i++)
 	{
-		gotoxy(x,y);
+		gotoxy(x,y); /***将光标移动到指定列坐标 x 和行坐标 y***/
 		printf("%2d ",i);
 		x+=3;
 	}

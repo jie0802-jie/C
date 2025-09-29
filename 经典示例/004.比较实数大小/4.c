@@ -8,4 +8,4 @@ main()
 	c=x>y?x:y;				/* ¼ÆËãc=max(x,y) */
 	printf("MAX of (%f,%f) is %f",x,y,c);	/* Êä³öc */
 }
-
+

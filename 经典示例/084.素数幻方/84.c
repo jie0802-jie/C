@@ -1,5 +1,7 @@
 #include<stdio.h>
 #include<math.h>
+#include "conio.h"
+#include <stdlib.h>
 int number[210][5];     /*存放可逆素数及素数分解后的各位数字*/
 int select[110];        /*可以放在矩阵第一行和最后一行的素数的下标*/      
 int array[4][5];        /*4X4的矩阵，每行0号元素存可逆素数对应的数组下标*/
@@ -21,7 +23,7 @@ FILE *fp;
 void main()
 {
     int i,k,flag,cc=0,i1,i4;
-    clrscr();
+    system("cls");
     if((fp=fopen("Exa70data.dat","w+"))==NULL)
     {
 	printf("\n Can't create file Exa70data.dat !\n");
@@ -191,4 +193,3 @@ void p_array(void)                /*输出矩阵*/
 	fprintf(fp,"\n");
     }
 }
-

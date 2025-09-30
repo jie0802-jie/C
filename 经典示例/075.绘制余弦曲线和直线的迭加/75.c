@@ -4,7 +4,7 @@ void main()
 {
     double y;
     int x,m,n,yy;
-    clrscr();
+    system("cls");
     puts("========This program shows the curve of cos(x) and a line.========");
     puts("        ******* f(x)=cos(x)    +++++++ g(x)=45*(y-1)+31");
 
@@ -23,4 +23,4 @@ void main()
     puts(" Press any key to quit...");
     getch();
 }
-
+

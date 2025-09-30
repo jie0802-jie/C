@@ -25,7 +25,7 @@ main()
     int i,j,m1,m2,x1,x2,n,c,p;
 /*    char symbs[MAXSYMBS],symb; */
     /*数组huff_node初始化*/
-    clrscr();
+    system("cls");
 	printf("please input the leaf num of tree:\n");
     scanf("%d",&n);
     for(i=0;i<2*n-1;i++)
@@ -104,4 +104,4 @@ main()
 	puts("Press any key to quit...");
 	getch();
 
-}
+}

@@ -2,6 +2,7 @@
 /*                          汉诺塔问题                          */
 /*//////////////////////////////////////////////////////////////*/
 #include <stdio.h>
+#include <stdlib.h>
 
 /* hanoil 子程序，实现将n个盘子从a移动到c */
 void hanoil(int n,char a,char b, char c)
@@ -24,7 +25,7 @@ void main()
    	char a='A';
    	char b='B';
 	char c='C';
-	clrscr();
+	system("cls");
    	printf("This is a hanoil program.\nPlease input number of the plates:\n");
    	scanf("%d",&n);
    	if(n<=0)
@@ -38,5 +39,3 @@ void main()
    	getch();
 
 }
-
-

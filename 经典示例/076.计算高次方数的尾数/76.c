@@ -2,7 +2,7 @@
 void main()
 {
     int i,x,y,last=1;    /*变量last保存求X的Y次方过程中的部分乘积的后三位*/
-    clrscr();
+    system("cls");
     puts("**********************************************************");
     puts("*  This is a program to calculate the last 3 digits of   *");
     puts("*              high order value, e.g., 13^15.            *");
@@ -15,4 +15,3 @@ void main()
     puts("\n >> Press any key to quit...");
     getch();
 }
-

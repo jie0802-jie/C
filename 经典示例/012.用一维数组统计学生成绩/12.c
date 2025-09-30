@@ -5,7 +5,7 @@ void main()
 	while(1)
 	{
 		do{
-			clrscr();
+			system("cls");
 			puts("=========================");
 			puts("|  Please select key:   |");
 			puts("|  1. Quary             |");
@@ -18,7 +18,7 @@ void main()
 		switch(SelectKey)
 		{
 			case '1':
-				clrscr();
+				system("cls");
 				puts("================================");
 				puts("|    Your balance is $1000.    |");
 				puts("|  Press any key to return...  |");
@@ -27,7 +27,7 @@ void main()
 				break;
 			case '2':
 				do{
-					clrscr();
+					system("cls");
 					puts("==================================");
 					puts("|   Please select Credit money:  |");
 					puts("|   1. $50                       |");
@@ -39,7 +39,7 @@ void main()
 				switch(CreditMoney)
 				{
 					case '1':
-						clrscr();
+						system("cls");
 						puts("=========================================");
 						puts("|  Your Credit money is $50,Thank you!  |");
 						puts("|         Press any key to return...    |");
@@ -47,7 +47,7 @@ void main()
 						getch();
 						break;
 					case '2':
-						clrscr();
+						system("cls");
 						puts("==========================================");
 						puts("|  Your Credit money is $100,Thank you!  |");
 						puts("|         Press any key to return...     |");
@@ -60,7 +60,7 @@ void main()
 				break;
 			case '3':
 				do{
-					clrscr();
+					system("cls");
 					puts("====================================");
 					puts("|   Please select Debit money:     |");
 					puts("|   1. $50                         |");
@@ -75,7 +75,7 @@ void main()
 				switch(DebitMoney)
 				{
 					case '1':
-						clrscr();
+						system("cls");
 						puts("===========================================");
 						puts("|   Your Debit money is $50,Thank you!    |");
 						puts("|        Press any key to return...       |");
@@ -83,7 +83,7 @@ void main()
 						getch();
 						break;
 					case '2':
-						clrscr();
+						system("cls");
  						puts("===========================================");
 						puts("|   Your Debit money is $100,Thank you!   |");
 						puts("|        Press any key to return...       |");
@@ -91,7 +91,7 @@ void main()
 						getch();
 						break;
 					case '3':
-						clrscr();
+						system("cls");
 						puts("===========================================");
 						puts("|   Your Debit money is $500,Thank you!   |");
 						puts("|        Press any key to return...       |");
@@ -99,7 +99,7 @@ void main()
 						getch();
 						break;
 					case '4':
-						clrscr();
+						system("cls");
 						puts("===========================================");
 						puts("|   Your Debit money is $1000,Thank you!  |");
 						puts("|        Press any key to return...       |");
@@ -111,7 +111,7 @@ void main()
 				}
 				break;
 			case '4':
-				clrscr();
+				system("cls");
 				puts("================================");
 				puts("|   Thank you for your using!  |");
 				puts("|            Good bye!         |");
@@ -119,4 +119,4 @@ void main()
 				return;
 		}
 	}
-}
+}

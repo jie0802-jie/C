@@ -1,8 +1,10 @@
 #include<stdio.h>
-void main()
+#include "conio.h"
+#include <stdlib.h>
+int main()
 {
     int n=1,count=0;
-    clrscr();
+    system("cls");
     puts("*********************************************************");
     puts("*      >> This program is to verify Jiaogu Guess  <<    *");
     puts("* That is given any natural number, if it is an even,   *");
@@ -34,4 +36,4 @@ void main()
     puts("\n Press any key to quit...");
     getch();
 }
-
+

@@ -2,7 +2,7 @@
 void main()
 {
     int n,a,b;
-    clrscr();
+    system("cls");
     puts("==========================================================");
     puts("||  This program will find the four figures which have  ||");
     puts("||     the characteristic as follows: abcd=(ab+cd)^2.   ||");
@@ -19,4 +19,3 @@ void main()
     puts("\n\n >> Press any key to quit...");
     getch();
 }
-

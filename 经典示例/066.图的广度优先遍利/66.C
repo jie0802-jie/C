@@ -3,6 +3,7 @@
 /* ///////////////////////////////////////*/
 #include <stdlib.h>
 #include <stdio.h>
+#include "conio.h"
 #define MAXQUEUE 10               /* 队列的最大容量       */
 
 struct node                       /* 图的顶点结构定义     */
@@ -95,7 +96,7 @@ void bfs(int current)
 
 /***********************  主程序  ************************************/
 /*********************************************************************/
-void main()
+int main()
 {
    graph ptr;
    int node[20][2] = { {1, 2}, {2, 1},  /* 边信息数组       */
@@ -109,7 +110,7 @@ void main()
                        {2, 8}, {8, 2},
                        {7, 8}, {8, 7} };
    int i;
-   clrscr();
+   system("cls");
    puts("This is an example of Width Preferred Traverse of Gragh.\n");
    for ( i = 1; i <= 8; i++ )        /*顶点结构数组初始化*/
    {
@@ -136,5 +137,3 @@ void main()
    puts(" Press any key to quit...");
    getch();
 }
-
-

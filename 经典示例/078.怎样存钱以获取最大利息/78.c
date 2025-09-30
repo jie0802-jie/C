@@ -4,7 +4,7 @@ void main()
 {
     int i8,i5,i3,i2,i1,n8,n5,n3,n2,n1;
     float max=0,term;
-    clrscr();
+    system("cls");
     for(i8=0;i8<3;i8++)       /*穷举所有可能的存款方式*/
         for(i5=0;i5<=(20-8*i8)/5;i5++)
             for(i3=0;i3<=(20-8*i8-5*i5)/3;i3++)
@@ -33,4 +33,3 @@ void main()
     puts("\n Press any key to quit...");
     getch();
 }
-

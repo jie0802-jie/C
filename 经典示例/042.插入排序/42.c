@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define MAX 255
 int R[MAX];
 void Insert_Sort(int n)
@@ -20,7 +21,7 @@ void Insert_Sort(int n)
 main()
 {
 	int i,n;
-	clrscr();
+	system("cls");
 	puts("Please input total element number of the sequence:");
 	scanf("%d",&n);
 	if(n<=0||n>MAX)
@@ -42,4 +43,3 @@ main()
 	getchar();
 	getchar();
 }
-

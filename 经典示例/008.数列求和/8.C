@@ -1,5 +1,5 @@
 #include <stdio.h>
-main()
+int main()
 {
 	int i,j,n;
 	long sum=0,temp=0;
@@ -9,7 +9,7 @@ main()
 	if(n<1)
 	{
 		printf("The n must no less than 1!\n");
-		return;
+		return 0;
 	}
 
 	for(i=1;i<=n;i++)
@@ -22,4 +22,4 @@ main()
 	printf("The sum of the sequence(%d) is %d\n",n,sum);
 	getchar();
 	getchar();
-}
+}

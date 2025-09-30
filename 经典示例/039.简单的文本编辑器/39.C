@@ -1,12 +1,17 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <conio.h>
 #define MAXLEN 80
 #define MAXLINE 200
 char buffer[MAXLEN],fname[120];
 char *lineptr[MAXLINE];
 FILE *fp;
-void edit(),replace(),insert(),delete(),quit();
+void edit(), replace(), insert(), quit();
+void delete_line();
+void save(char *fname); 
 char comch[]="EeRrIiDdQq";/*命令符*/
-void(*comfun[])()={edit,replace,insert,delete,quit};/*对应处理函数*/
+void(*comfun[])()={edit,replace,insert,delete_line,quit};/*对应处理函数*/
 int modified=0,/*正文被修改标志*/
 	last;/*当前正文行数*/
 char *chpt;/*输入命令行字符指针*/
@@ -20,7 +25,7 @@ main()
 	{
 		printf("\nInput a command:[e,r,i,d,q].\n");
 		gets(buffer);/*读入命令行*/
-		for(chpt=buffer;*chpt==''||*chpt=='\t';chpt++);/*掠过空白符*/
+		for(chpt=buffer;*chpt==' '||*chpt=='\t';chpt++);/*掠过空白符*/
 		if(*chpt=='\0') continue;/*空行重新输入*/
 		for(j=0;comch[j]!='\0'&&comch[j]!=*chpt;j++);/*查命令符*/
 		if(comch[j]=='\0') continue;/*非法命令符*/
@@ -67,7 +72,7 @@ void insert()
 	modified=1;	/* 正文被修改 */
 }
 
-void delete()
+void delete_line()
 {
 	int i,j,m,n;
 	sscanf(chpt,"%d%d",&m,&n);	/* 读入参数 */
@@ -116,7 +121,7 @@ void replace()
 	modified=1;	/* 正文被修改 */
 }
 
-save(char *fname)	/* 保存文件 */
+void save(char *fname)	/* 保存文件 */
 {
 	int i;
 	FILE *fp;
@@ -158,6 +163,3 @@ void edit()	/* 编辑命令 */
 	fclose(fp);
 	last=i;
 }
-		
-	
-		

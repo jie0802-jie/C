@@ -2,6 +2,7 @@
 #include<string.h>
 #include<conio.h>	
 #include<stdlib.h>
+#include <windows.h>
 #define STACK_INIT_SIZE 10
 #define OK 1
 #define TRUE 1
@@ -74,6 +75,10 @@ void Change(SqStack S,char *a) /*将栈中的元素按反序付给 a */
 while (!StackEmpty(S))
 GetTop(&S,&a[n--]);
 }
+void gotoxy(int x, int y) {
+    COORD coord = {x, y};
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}
 void Control(Stack *s)
 {int i=0,k,j=0;
 SElemType ch,*a;
@@ -82,7 +87,7 @@ printf("input password,you have three chances：\n",k);
 for(;;)
 { if(i>=3)
 {  i++;
-clrscr();
+system("cls");
 gotoxy(1,1); /*定位黑屏光标位置*/
 break;
 }
@@ -112,9 +117,9 @@ if(i==4) printf("\n password wrong!");
 else printf("\n password right!\n");
 free(a);
 }
-main()
+int main()
 {Stack s;
-clrscr();
+system("cls");
 InitStack(&s);
 Control(&s);
 getch();

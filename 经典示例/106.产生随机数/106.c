@@ -32,7 +32,7 @@ void main()
 {
 	double test;
 	int i;
-	clrscr();
+	system("cls");
 	puts("This is a random number generator.");
 	puts("\n The random number are: ");
 	for ( i = 0; i < 3; i++ )

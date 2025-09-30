@@ -1,6 +1,7 @@
 
 #include <stdio.h>
 #include <math.h>
+#include <string.h>
 
 
 void oplot(n,x,y) /*作图函数，这里使用DOS的文本模式画图*/
@@ -31,7 +32,7 @@ main()
 {
     int points,k;
     double x[50], y[50], angle, portion;
-    clrscr();
+    system("cls");
 
 	points = 40; /*一共画40个点*/
 	portion = 4.0 * M_PI / points; /*将720度分成40份。*/

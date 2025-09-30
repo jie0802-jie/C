@@ -1,6 +1,4 @@
-#include "stdafx.h"
 #include "stdio.h"
-#include "iostream.h"
 #include "stdlib.h"
 #include "malloc.h"
 #include "string.h"

@@ -2,7 +2,7 @@
 void main()
 {
     long mul,number,k,ll,kk,n;
-    clrscr();
+    system("cls");
     puts("============================================================");
     puts("||    This program will find the automorphic numbers.     ||");
     puts("|| The defination of a automorphic number is: the mantissa||");
@@ -32,4 +32,3 @@ void main()
     puts("\n\n >> Press any key to quit...");
     getch();
 }
-

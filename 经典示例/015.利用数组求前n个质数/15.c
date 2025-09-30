@@ -1,10 +1,11 @@
+#include <stdio.h>
 #define N 50
 main()
 {
 	int primes[N];
 	int pc,m,k;
 
-	clrscr();
+	system("cls");
 	printf("\n The first %d prime numbers are:\n",N);
 	primes[0]=2;/*2是第一个质数*/
 	pc             =1;/*已有第一个质数*/
@@ -29,4 +30,4 @@ main()
 		printf("%4d",primes[k]);
 	printf("\n\n Press any key to quit...\n ");
 	getch();
-}
+}

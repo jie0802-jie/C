@@ -15,7 +15,7 @@ main( )/*示意程序*/
 {
 	char s[MAX];/*="ABCABC";*/
 	char s1[MAX],s2[MAX];
-	clrscr();
+	system("cls");
 	puts("Please input the string for s:");
 	scanf("%s",s);
 	puts("Please input the string for s1:");
@@ -29,4 +29,4 @@ main( )/*示意程序*/
 	puts("\n Press any key to quit...");
 	getch();
 }
-
+

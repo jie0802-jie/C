@@ -8,7 +8,7 @@
 #define   FALSE   0 
 #define   OK   1 
 #define   ERROR   0 
-#define   NULL   0 
+//#define   NULL   0 
 #define   OVERFLOW   -2 
 #define   MAXSIZE   100 
 #define   stack_init_size   100 
@@ -39,7 +39,7 @@ status   push   (sqstack   *s,selemType   e)
 { 
 	if(s->top-s->base>=s->stacksize) 
 	{ 
-		s->base=(elemType*)   realloc(s->base,(s->stacksize+stackincrement)*sizeof(elemType))     
+		s->base=(elemType*)   realloc(s->base,(s->stacksize+stackincrement)*sizeof(elemType)) ;    
 		if(!s->base)   exit(OVERFLOW); 
 		s->top=s->base+s->stacksize; 
 		s->stacksize+=stackincrement; 
@@ -193,7 +193,7 @@ status   main()
 	linkqueue   q1; 
 	int   k=0; 
 	int   flag=1; 
-	clrscr(); 
+	system("cls"); 
 	printf("Please   Input   the   Demon's   Words:\n"); 
 	printf("!:   Less   Than   30   Letters:   )\n"); 
 	printf("!:   End   with   '#':   )\n\t"); 

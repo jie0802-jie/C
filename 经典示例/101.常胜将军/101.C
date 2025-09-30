@@ -1,8 +1,10 @@
 #include<stdio.h>
-void main()
+#include <stdlib.h>
+#include "conio.h"
+int main()
 {
    int a=21,i;
-   clrscr();
+   system("cls");
    puts("*****************************************************");
    puts("*            This is a Matchstick Taken Game.       *");
    puts("* There are 21 machsticks, two persons take them in *");
@@ -32,4 +34,3 @@ void main()
    printf("\n Press any key to quit...");
    getch();
 }
-

@@ -1,9 +1,15 @@
 #include <stdio.h>
-#include <conio.h>
-void main(void)
+#include <windows.h>  // 必须放在代码开头
+//#include <conio.h>
+
+void gotoxy(int x, int y) {
+    COORD coord = {x, y};
+    SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), coord);
+}
+int main(void)
 {
 	int i,j,x,y;
-	clrscr();
+	system("cls");
 	printf("\n\n  * * * 乘法口诀表 * * * \n\n");
 	x=9;
 	y=5;
@@ -36,24 +42,3 @@ void main(void)
 	}
 	printf("\n\n");
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

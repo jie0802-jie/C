@@ -2,7 +2,7 @@
 void main()
 {
     int a,i,b,n,m;
-    clrscr();
+    system("cls");
     printf("================================================================\n");
     printf("     This is a program to find friendly numbers pair.\n");
     printf("   Which means the sum of integer A's all factors (except A)\n");
@@ -24,4 +24,3 @@ void main()
     puts("\n\n Press any key to quit...");
     getch();
 }
-

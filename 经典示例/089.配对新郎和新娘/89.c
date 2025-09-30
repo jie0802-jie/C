@@ -2,7 +2,7 @@
 void main()
 {
     int x,y,z;
-    clrscr();
+    system("cls");
     puts("****************************************************************");
     puts("*  This program is to solve Problem of Bridegroom and Bride.   *");
     puts("* The Problem is as follows: Someone goes to 3 couples lovers' *");
@@ -27,4 +27,3 @@ void main()
     printf(" Press any key to quit...");
     getch();
 }
-

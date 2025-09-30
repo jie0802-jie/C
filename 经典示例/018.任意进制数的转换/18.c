@@ -1,3 +1,4 @@
+#include <stdio.h>
 /* 函数trans将无符号整数n翻译成d（2<＝d<＝16）进制表示的字符串s */
 #define M sizeof(unsigned int)*8
 int trans(unsigned n, int d, char s[])
@@ -28,7 +29,7 @@ main()
 	int scale[]={2,3,10,16,1};
 	char str[33];
 	int i;
-	clrscr();
+	system("cls");
 	for(i=0;i<sizeof(scale)/sizeof(scale[0]);i++)
 	{
 		if(trans(num,scale[i],str))
@@ -38,4 +39,4 @@ main()
 	}
 	printf("\n Press any key to quit...\n");
 	getch();
-}
+}

@@ -7,7 +7,7 @@ main()
 	int matrixA[ROW][COL],matrixB[COL][ROW];
 	int i,j;
 
-	clrscr();
+	system("cls");
 	printf("Enter elements of the matrixA,");
 	printf("%d*%d:\n",ROW,COL);
 	for( i=0; i<ROW; i++ )

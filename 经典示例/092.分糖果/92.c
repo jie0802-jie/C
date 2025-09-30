@@ -6,7 +6,7 @@ void main()
 {
     static int sweet[10]={10,2,8,22,16,4,10,6,14,20};   /*初始化数组数据*/
     int i,t[10],l;
-    clrscr();
+    system("cls");
     printf("  Child No.    1   2   3   4   5   6   7   8   9   10\n");
     printf("------------------------------------------------------\n");
     printf("  Round No.|\n");
@@ -41,4 +41,4 @@ void print(int s[])      /*输出数组中每个元素的值*/
     for(k=0;k<10;k++)   printf("%4d",s[k]);
     printf("\n");
 }
-
+

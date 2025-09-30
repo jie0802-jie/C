@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 #define ROWS 4
 #define COLS 4
 int nums[ROWS][COLS]={{1000,1000,1000,1000},
@@ -60,4 +62,3 @@ to_roman(int decimal,char roman[ ])/*将整数转换成罗马数字表示*/
 				decimal-=nums[power][index];
 			}
 }
-

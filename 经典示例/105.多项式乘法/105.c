@@ -41,7 +41,7 @@ void main()
 	int i,j,m,n;
 	double  px[MAX],qx[MAX],rx[MAX];
 	float x;
-	clrscr();
+	system("cls");
 	for(i=0;i<MAX;i++)
 		rx[i]=0;
 	puts("      This is a polynomial multiplication program.");
@@ -77,4 +77,4 @@ void main()
 	printf("\nThe value of the R(%f) is: %13.7f",x,compute(rx,m+n-1,x));
 	puts("\n Press any key to quit...");
 	getch();
-}
+}

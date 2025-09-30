@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define N 10
 typedef struct node
 {
@@ -84,7 +85,7 @@ main()
     char studname[20];
     stud *head,*searchpoint;
     number=N;
-    clrscr();
+    system("cls");
     puts("Please input the size of the list:");
     scanf("%d",&number);
     head=creat(number);
@@ -98,4 +99,3 @@ main()
     puts("\n Press any key to quit...");
     getch();
 }
-

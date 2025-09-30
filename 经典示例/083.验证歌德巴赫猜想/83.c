@@ -5,7 +5,7 @@ void main()
 {
     int i,j,n;
     long max;
-    clrscr();
+    system("cls");
     puts("============================================================");
     puts("||       This program will verify the Goldbach Guess.     ||");
     puts("|| That is any positive even number can be broken up into ||");
@@ -47,4 +47,3 @@ int fflag(int i)           /*ÅĞ¶ÏÊÇ·ñÎªËØÊı*/
         if(!(i%j))return 0;
     return 1;              /*if yes,return 1*/
 }
-

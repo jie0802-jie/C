@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 #define N 200
 #define SCORES 5
 #define NUMLEN 10
@@ -61,7 +63,7 @@ main()
 {
 	int n,i,j,t;
 
-	clrscr();
+	system("cls");
 	for(n=0;readastu(students+n);n++);
 	/*采用冒泡法对学生信息数组排序*/
 	for(i=0;i<n;i++)
@@ -85,4 +87,3 @@ main()
 	printf("\n Press any key to quit...\n");
 	getch();
 }
-

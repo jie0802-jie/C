@@ -1,11 +1,14 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <conio.h>
 main()
 {
 	char fname[80];/*存贮文件名*/
 	FILE *rfp;
 	long count;/*文件字符计数器*/
 
-	clrscr();
+	system("cls");
 	printf("Please input the file's name:\n");
 	scanf("%s",fname);
 	if((rfp=fopen(fname,"r"))==NULL)
@@ -21,4 +24,4 @@ main()
 	puts("\n Press any key to quit...");
 	getch();
 }
-
+

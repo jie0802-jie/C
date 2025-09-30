@@ -1,3 +1,4 @@
+#include <stdio.h>
 rest(int a[], int n)
 {
 	int i,low,high,t;
@@ -29,7 +30,7 @@ int s[]={8,4,0,-1,6,0,-5};
 main()
 {
 	int i;
-	clrscr();
+	system("cls");
 	printf("\n The arry before rest is:\n");
 	for(i=0;i<sizeof(s)/sizeof(s[0]);i++)
 		printf("%4d",s[i]);
@@ -39,4 +40,4 @@ main()
 		printf("%4d",s[i]);
 	printf("\n Press any key to quit...\n");
 	getch();
-}
+}

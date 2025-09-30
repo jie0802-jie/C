@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <string.h>
 /* 字符串的所有字符排列函数，用已知字符串s中的所有字符，生成由其中n个字符组成的所有字符排列 */
 #define N 20
 char w[N];
@@ -24,7 +26,7 @@ main()
 	int n=2;
 	char s[N];
 	w[n]='\0';
-	clrscr();
+	system("cls");
 	printf("This is a char permutation program!\nPlease input a string:\n");
 	scanf("%s",s);
 	puts("\nPlease input the char number of permuted:\n");
@@ -33,4 +35,4 @@ main()
 	perm(n,s);
 	puts("\nPress any key to quit...");
 	getch();
-}
+}

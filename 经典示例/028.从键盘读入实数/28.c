@@ -67,10 +67,10 @@ int readreal(double *dp)
 main()
 {
 	double x;
-	clrscr();
+	system("cls");
 	printf("\nPlease input real numbers (use nonreal char to end input):\n");
 	while(readreal(&x)==1)
 		printf("The real number you input is: %f\n",x);
 	printf("\nYou have inputted nonreal char.\n Press any key to quit...\n");	
 	getch();
-}
+}

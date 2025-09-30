@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 struct ele{
 	int no;
 	struct ele *link;
@@ -7,7 +9,7 @@ main()
 {
 	int n,m,i;
 	struct ele *h,*u,*p;
-	clrscr();
+	system("cls");
 	printf("Please input n&m:\n");
 	scanf("%d%d",&n,&m);/*输入n和m*/
 	h=u=(struct ele *)malloc(sizeof(struct ele));/*形成首表元*/
@@ -33,4 +35,4 @@ main()
 	printf("\n\n Press any key to quit...\n");
 	getch();
 }
-
+

@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#define NULL 0 /*宏定义*/
+//#define NULL 0 /*宏定义*/
 typedef struct node /*定义结点类型的数据结构*/
 {
 	char c; /*数据域，类型为字符型*/

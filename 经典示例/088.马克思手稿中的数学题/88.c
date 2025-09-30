@@ -2,7 +2,7 @@
 void main()
 {
     int x,y,z,count=0;
-    clrscr();
+   system("cls");
     puts("****************************************************************");
     puts("*  This program is to solve an interesting math question in    *");
     puts("*                  Karl Marx's manuscript.                     *");
@@ -25,4 +25,3 @@ void main()
     printf(" Press any key to quit...");
     getch();
 }
-

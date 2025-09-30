@@ -1,8 +1,10 @@
 #include<stdio.h>
-void main()
+#include "conio.h"
+#include <stdlib.h>
+int main()
 {
    int n,k,x,y,cc,pc,g;
-   clrscr();
+   system("cls");
    puts("*******************************************************");
    puts("*            This is a Mountain Moveing Game.         *");
    puts("* There are n mountains, two persons move them in     *");
@@ -61,4 +63,3 @@ void main()
    printf("\n Press any key to quit...");
    getch();
 }
-

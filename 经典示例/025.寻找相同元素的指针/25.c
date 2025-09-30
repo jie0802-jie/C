@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 /*[函数]在已知两个从小到大有序的数表中寻找都出现的第一个元素的指针*/
 #define NULL 0
 int *search2(int *pa,int *pb,int an,int bn)
@@ -24,7 +26,7 @@ main( )/*只是为了引用函数search2( )*/
 	int *vp,i;
 	int a[ ]={1,3,5,7,9,13,15,27,29,37};
 	int b[ ]={2,4,6,8,10,13,14,27,29,37};
-	clrscr();
+	system("cls");
 	puts("The elements of array a is:");
 	for(i=0;i<sizeof(a)/sizeof(a[0]);i++)
 		printf(" %d",a[i]);
@@ -38,4 +40,4 @@ main( )/*只是为了引用函数search2( )*/
 	getch();
 
 }
-
+

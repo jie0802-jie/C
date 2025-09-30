@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <conio.h>
 #define N 10
 
@@ -117,7 +119,7 @@ printf("\n");
 
 void quit()
 {
-clrscr();
+system("cls");
 puts("\n Thank you for your using!\n Press any key to quit...");
 getch();
 exit(0);
@@ -125,7 +127,7 @@ exit(0);
 
 void menu(void)
 {
-    clrscr();
+    system("cls");
 printf("       simple linklise realization of c\n");
 printf("    ||=====================================||\n");
 printf("    ||                                     ||\n");
@@ -156,13 +158,13 @@ main()
         switch(choose)
         {
             case 1:
-            	clrscr();
+            	system("cls");
             	head=creat();
             	puts("Linklist created successfully! \nPress any key to return...");
             	getch();
             break;
             case 2:
-            	clrscr();
+            	system("cls");
                 printf("Input the student's name which you want to find:\n");
                 scanf("%s",fullname);
                 searchpoint=search(head,fullname);
@@ -172,14 +174,14 @@ main()
 	    		getchar();
                 break;
             case 3:
-                clrscr();
+                system("cls");
                 insert(head);
                 print(head);
                 printf("\nPress any key to returen...");
                 getchar();getchar();
                 break;
             case 4:
-                clrscr();
+                system("cls");
                 print(head);
                 printf("\nInput the student's name which you want to delete:\n");
                 scanf("%s",fullname);
@@ -198,7 +200,7 @@ main()
             case 6:quit();
                 break;
             default:
-                clrscr();
+                system("cls");
                 printf("Illegal letter! Press any key to return...");
                 menu();
                 getchar();
@@ -206,4 +208,3 @@ main()
     }
 }
 
-

@@ -60,4 +60,3 @@ void main()
 	printf("%d\n",SEQA->data[i]);
 	}
 }
-

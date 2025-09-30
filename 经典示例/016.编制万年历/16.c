@@ -30,7 +30,7 @@ main()
 {int sw,leap,i,j,k,wd,day;
  int year;/*年*/
  char title[]="SUN MON TUE WED THU FRI SAT";
-clrscr();
+system("cls");
 printf("Please input the year whose calendar you want to know: ");/*输入年*/
 scanf("%d%*c",&year);/*输入年份值和掠过值后的回车*/
 sw=w(year,1,1);
@@ -75,4 +75,4 @@ for(i=0;i<6;i++)
 puts("=================================================================|");
 puts("\n Press any key to quit...");
 getch();
-}
+}

@@ -8,6 +8,8 @@
 */
 
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 #define	SWN		3	/* 课程数 */
 #define NAMELEN		20	/* 姓名最大字符数 */
 #define CODELEN		10	/* 学号最大字符数 */
@@ -225,7 +227,7 @@ main()
 	char buf[BUFLEN];
 	FILE *fp;
 	struct record s;
-	clrscr();
+	system("cls");
 	printf("Please input the students marks record file's name: ");
 	scanf("%s",stuf);
 	if((fp=fopen(stuf,"r"))==NULL)
@@ -322,4 +324,4 @@ main()
 			default: break;
 		}
 	}
-}
+}

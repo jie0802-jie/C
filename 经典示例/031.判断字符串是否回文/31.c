@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 #define MAX 50
 int cycle(char *s)
 {
@@ -12,7 +13,7 @@ int cycle(char *s)
 main()
 {
 	char s[MAX];
-	clrscr();
+	system("cls");
 	while(1)
 	{
 		puts("Please input the string you want to judge (input ^ to quit):");
@@ -26,4 +27,4 @@ main()
 	}
 	puts("\nThank you for your using,bye bye!\n");
 }
-
+

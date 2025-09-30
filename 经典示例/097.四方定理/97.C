@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include "conio.h"
+#include <stdlib.h>
 void verify_four_squares(int number)
 {
     int i,j,k,l;
@@ -12,11 +14,11 @@ void verify_four_squares(int number)
 				return;
 	                    }
 }
-void main()
+int main()
 {
     int number=1;
 
-    clrscr();
+    system("cls");
     puts("*****************************************************");
     puts("* This program is to verify Theorem of Four Squares.*");
     puts("* That is all natural numbers can be represented as *");
@@ -35,4 +37,4 @@ void main()
     puts("\n Press any key to quit...");
     getch();
 }
-
+

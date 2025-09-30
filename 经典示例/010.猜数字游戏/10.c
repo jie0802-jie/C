@@ -1,9 +1,9 @@
 #include <stdio.h>
 #include <conio.h>
-void main()
+int main()
 {
 	int Password=0,Number=0,price=58,i=0;
-	clrscr();
+	system("cls");
 	printf("\n====This is a Number Guess Game!====\n");
 	while( Password != 1234 )
 	{
@@ -56,4 +56,3 @@ void main()
 	}
 }
 
-

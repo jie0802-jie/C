@@ -1,10 +1,12 @@
 #include<stdio.h>
+#include "conio.h"
+#include <stdlib.h>
 void getti(int a,int y,int z);
 int i;           /*最后需要分出的重量*/
-void main()
+int main()
 {
     int a,y,z;
-    clrscr();
+    system("cls");
     puts("***************************************************************");
     puts("*  This program is to solve Problem of Poisson Beer Division. *");
     puts("* The Problem is as follows: Someone has a bottle of 12 pints *");
@@ -43,4 +45,3 @@ void getti(int a,int y,int z)   /*a:满瓶的容量  y:第一个空瓶的容量  z:第二个空瓶
    }
    printf("-----------------------------\n");
 }
-

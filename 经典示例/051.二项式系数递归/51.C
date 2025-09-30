@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <conio.h>
 int binom (int n, int i);
-void main (void)
+int main (void)
     {
     int int1;
 int int2;

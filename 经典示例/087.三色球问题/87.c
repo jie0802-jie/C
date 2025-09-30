@@ -2,7 +2,7 @@
 void main()
 {
     int i,j,count=0;
-    clrscr();
+    system("cls");
     puts("****************************************************************");
     puts("*     This program is to solve Problem of Three Color Ball.    *");
     puts("* The Problem is as follows: There are 12 balls in the pocket. *");
@@ -22,4 +22,3 @@ void main()
     printf(" Press any key to quit...");
     getch();
 }
-

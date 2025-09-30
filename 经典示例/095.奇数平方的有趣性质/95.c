@@ -2,7 +2,7 @@
 void main()
 {
     long int a,n=0;
-    clrscr();
+    system("cls");
     puts("***********************************************************");
     puts("*      >>      This program is to verify       <<         *");   
     puts("*      >>     odd number's characteristic.     <<         *");

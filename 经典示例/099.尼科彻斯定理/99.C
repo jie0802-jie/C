@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include "conio.h"
+#include <stdlib.h>
 void vrNico(int a)
 {
     int b,c,d;
@@ -14,11 +16,11 @@ void vrNico(int a)
 }
 
 
-void main()
+int main()
 {
 
     int n=1;
-    clrscr();
+    system("cls");
     puts("******************************************************");
     puts("*    This program is to verify Theorem of Nicoqish.  *");
     puts("* That is the cube of any integer can be represented *");
@@ -38,4 +40,3 @@ void main()
     puts("\n Press any key to quit...");
     getch();
 }
-

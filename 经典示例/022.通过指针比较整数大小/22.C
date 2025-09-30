@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <conio.h>
 main()
 {
 	int x,y,z;	/* 定义三个int型变量 */
@@ -5,7 +8,7 @@ main()
 	    *yp = &y,	/* 定义指针变量yp,并赋值为y的地址，使yp指向y */
 	    *zp = &z;	/* 定义指针变量zp,并赋值为z的地址，使zp指向z */
 	int t;
-	clrscr();
+	system("cls");
 	printf("\nPlease input x,y,z:\n");
 	scanf("%d%d%d",xp,yp,zp);	/* 通过变量的指针，为变量输入值 */
 	if(*xp>*yp)	/* 通过指向变量的指针引用变量的值 */
@@ -29,4 +32,4 @@ main()
 	printf("x = %d\ty = %d\tz = %d\n",x,y,z);
 	printf("\nPress any key to quit...\n");
 	getch();
-}
+}

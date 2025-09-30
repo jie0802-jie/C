@@ -1,4 +1,7 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include <conio.h>
 #define PAGELINE   20
 #define PAGESPLINE 2
 #define TXTWIDTH   30
@@ -39,7 +42,7 @@ main()
 	char fname[120];/*存贮文件名*/
 	int fill1,fill2;/*分别记录两个文件当前行读入并输出的字符数*/
 
-	clrscr();
+	system("cls");
 	printf("Enter file 1 name.\n");
 	scanf("%s",fname);
 	fpt1=fopen(fname,"r");/*打开文件1*/
@@ -60,12 +63,12 @@ main()
 	{
 		fill1=fill2=0;
 		if(!feof(fpt1)) fill1=readline(fpt1);/*在文件未结束时读文件*/
-		printf("%*c",TXTWIDTH-fill1+TXTGAP,'');
+		printf("%*c",TXTWIDTH-fill1+TXTGAP,' ');
 		if(!feof(fpt2)) fill2=readline(fpt2);/*在文件未结束时读文件*/
-		printf("%*c%2d\n",TXTWIDTH-fill2+4,'',fill1+fill2);
+		printf("%*c%2d\n",TXTWIDTH-fill2+4,' ',fill1+fill2);
 		linecount();/*调用行计数函数*/
 	}
 	puts("\n Press any key to quit...");
 	getch();
 }
-
+

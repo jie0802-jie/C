@@ -4,7 +4,7 @@ void main()
 {
     int i,j,t,k,m,a[MAX];
     long n;
-    clrscr();
+    system("cls");
     puts("     This program will find the Armstrong number.\n");
     printf(" >> Please input the range you want to find (2~n):\n >> ");
     scanf("%ld",&n);
@@ -33,4 +33,3 @@ void main()
     printf("\n Press any key to quit...\n");
     getch();
 }
-

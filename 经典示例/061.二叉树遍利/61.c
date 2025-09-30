@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <malloc.h>
 
 typedef struct bitnode
 {
@@ -87,7 +89,7 @@ main()
 {
 	bitnode *t; int count=0;
 	int n=0;
-	clrscr();
+	system("cls");
 	printf("Please initialize the TREE!\n");
 	createbitree(&t,&n);
 
@@ -101,5 +103,3 @@ main()
 	puts("\n Press any key to quit...");
 	getch();
 }
-
-

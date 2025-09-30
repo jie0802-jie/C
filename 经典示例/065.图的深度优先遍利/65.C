@@ -3,6 +3,7 @@
 /*/////////////////////////////////////////////////////////////*/
 #include <stdlib.h>
 #include <stdio.h>
+#include "conio.h"
 
 struct node                       /* 图顶点结构定义     */
 {
@@ -61,7 +62,7 @@ void dfs(int current)
 
 /****************************** 主程序******************************/
 
-void main()
+int main()
 {
    graph ptr;
    int node[20][2] = { {1, 2}, {2, 1},  /* 边线数组     */
@@ -75,7 +76,7 @@ void main()
                        {6, 7}, {7, 6},
                        {7, 8}, {8, 7} };
    int i;
-   clrscr();
+   system("cls");
    for ( i = 1; i <= 8; i++ )      /*   顶点数组初始化  */
    {
       head[i].vertex = i;         /*    设定顶点值      */
@@ -102,5 +103,3 @@ void main()
    puts(" Press any key to quit...");
    getch();
 }
-
-

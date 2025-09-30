@@ -14,11 +14,13 @@ c 统计文件字符数
 */
 
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 main(int argc, char **argv )
 {
 	FILE *fp;
 	int lflg,wflg,cflg; /* l, w, c三个标志 */
-	int inline,inword; /* 行内和字内标志 */
+	int in_line,inword; /* 行内和字内标志 */
 	int ccount,wcount,lcount; /* 字符，字，行 计数器 */
 	int c;
 	char *s;
@@ -59,7 +61,7 @@ main(int argc, char **argv )
 			fprintf(stderr,"Can't open %s.\n",*argv);
 			continue;
 		}
-		inword=inline=0;
+		inword=in_line=0;
 		while((c=fgetc(fp))!=EOF)
 		{
 			if(cflg)
@@ -74,11 +76,11 @@ main(int argc, char **argv )
 				}
 			if(lflg)
 				if(c=='\n')
-					inline=0;
-				else if(inline==0)
+					in_line=0;
+				else if(in_line==0)
 				{
 					lcount++;
-					inline=1;
+					in_line=1;
 				}
 		}
 		fclose(fp);	/* 关闭文件 */

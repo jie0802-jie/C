@@ -1,6 +1,7 @@
 #include "stdio.h"
 #include "conio.h"
 #include "stdlib.h"
+#include <string.h>
 #define MAX 5
 typedef struct node
 { int k;
@@ -104,11 +105,11 @@ void my_free(lnode h)
 		temp=h;
 	}
 }
-void main()
+int main()
 {
 	lnode h;
 	int d;
-	clrscr();
+	system("cls");
 	h=my_input(&d);
 	puts("The sequence you input is:");
 	my_output(h);
@@ -119,5 +120,3 @@ void main()
 	puts("\n Press any key to quit...");
 	getch();
 }
-
-

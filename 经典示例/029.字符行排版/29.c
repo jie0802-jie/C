@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <string.h>
 /* 字符排版函数,将字符行内单字之间的空白字符平均分配插入到单字之间*/
 #define N 80
 edit(char *s)
@@ -41,7 +43,7 @@ edit(char *s)
 char buff[N];
 main()		/* 用于测试edit函数 */
 {
-	clrscr();
+	system("cls");
 	puts("This is a typeset program!\nPlease input a character line:\n");
 	gets(buff);
 	edit(buff);
@@ -50,4 +52,3 @@ main()		/* 用于测试edit函数 */
 	getch();
 }
 
-

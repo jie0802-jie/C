@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define MAX 255
 int R[MAX];
 int Partition(int i,int j)
@@ -33,7 +34,7 @@ void Quick_Sort(int low,int high)
 void main()
 {
 	int i,n;
-	clrscr();
+	system("cls");
 	puts("Please input total element number of the sequence:");
 	scanf("%d",&n);
 	if(n<=0||n>MAX)
@@ -54,4 +55,4 @@ void main()
 	puts("\n Press any key to quit...");
 	getch();
 	
-}
+}

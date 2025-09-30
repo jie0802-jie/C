@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include <conio.h>
 #define MAX 100
 struct Bag
 {	int weight;
@@ -28,7 +29,7 @@ Value=val;
 }
 return Value;
 }
-void main()
+int main()
 { int num,subnum;
 int l,
 clrscr();

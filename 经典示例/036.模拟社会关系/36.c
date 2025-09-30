@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 #define CHILDREN 5
 struct person{
 	char *name;/*Ãû×Ö·û´®Ö¸Õë*/
@@ -110,7 +112,7 @@ main()
 	char *name[8]={"John","Kate","Maggie","Herry","Jason","Peter","Marry","Jenny"};
 	char male='M',female='F';
 	struct person *pGrandfather,*pFather1,*pFather2,*pMother1,*pMother2,*pSon,*pDaughter,*pCousin;
-	clrscr();
+	system("cls");
 	pGrandfather = newperson(name[0],male);
 	pFather1 = newperson(name[3],male);
 	pFather2 = newperson(name[4],male);
@@ -157,4 +159,4 @@ main()
 	getch();
 
 }
-
+

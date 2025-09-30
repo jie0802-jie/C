@@ -37,11 +37,10 @@ void put_chess(int n)
 
 void main()
 {
-	clrscr();
+	system("cls");
 	puts("The possible placements are:");
     put_chess(0);
     puts("\n Press any key to quit...");
 	getch();
     return;
 }
-

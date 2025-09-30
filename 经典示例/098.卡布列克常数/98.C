@@ -1,14 +1,16 @@
 #include<stdio.h>
+#include "conio.h"
+#include <stdlib.h>
 void vr6174(int);
 void parse_sort(int num,int *each);
 void max_min(int *each,int *max,int *min);
 void parse_sort(int num,int *each);
 int count=0;
-void main()
+int main()
 {
 
     int n=1;
-    clrscr();
+    system("cls");
     puts("**************************************************************");
     puts("*         This program is to verify Comgrich Content.        *");
     puts("* That is any 4-digit number whose digitals are not the same *");
@@ -69,4 +71,4 @@ void max_min(int *each,int *max,int *min)    /*½«·Ö½âµÄÊý×Ö»¹Ô­Îª×î´óÕûÊýºÍ×îÐ¡Õ
         *max=*max*10+*i;
     return;
 }
-
+

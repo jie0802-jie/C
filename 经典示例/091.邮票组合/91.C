@@ -1,11 +1,13 @@
 #include<stdio.h>
+#include <stdlib.h>
+#include "conio.h"
 #define M 255
 int a[M];
 
-void main()
+int main()
 {
     int i,j,k,s,n=0;
-    clrscr();
+    system("cls");
     puts("****************************************************************");
     puts("*    This program is to solve Problem of Stamp Combination.    *");
     puts("* The Problem is as follows. John has 4 stamps with value of 3 *");
@@ -33,4 +35,3 @@ void main()
     printf("\n Press any key to quit...");
     getch();
 }
-

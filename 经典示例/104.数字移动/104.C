@@ -1,13 +1,15 @@
 #include<stdio.h>
+#include "conio.h"
+#include <stdlib.h>
 int a[]={0,1,2,5,8,7,6,3};     /*指针数组.依次存入矩阵中构成环的元素下标*/
 int b[9];                      /*表示3X3矩阵,b[4]为空格*/
 int c[9];                      /*确定1所在的位置后,对环进行调整的指针数组*/
 int count=0;                   /*数字移动步数计数器*/
-void main()
+int main()
 {
    int i,j,k,t;
    void print();
-   clrscr();
+   system("cls");
    puts("*****************************************************");
    puts("*         This is a program to Move Numbers.        *");
    puts("*****************************************************");
@@ -52,4 +54,3 @@ void print(void)        /*按格式要求输出矩阵*/
       else  printf("%2d",b[c]);
    printf("\n");
 }
-

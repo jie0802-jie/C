@@ -1,20 +1,21 @@
 #include<stdlib.h>
 #include<stdio.h>
+#include "conio.h"
 int comp(const void *j,const void *i);
 void p(int p,int b[],char n[]);
-void main()
+int main()
 {
     static char n[]={'2','3','4','5','6','7','8','9','T','J','Q','K','A'};
     int a[53],b1[13],b2[13],b3[13],b4[13];
     int b11=0,b22=0,b33=0,b44=0,t=1,m,flag,i;
-    clrscr();
+    system("cls");
     puts("******************************************************");
     puts("*      This is an Automatic Dealing Card program!    *");
     puts("*  In one game, 52 cards are divided into 4 groups.  *");
     puts("******************************************************");
     printf(" >> ----- Each person's cards are as follows. -------");
     while(t<=52)           /*控制发52张牌*/
-    {     m=random(52);      /*产生0到51之间的随机数*/
+    {      m = rand() % 52;      /*产生0到51之间的随机数*/
           for(flag=1,i=1;i<=t&&flag;i++)   /*查找新产生的随机数是否已经存在*/
             if(m==a[i]) flag=0;      /*flag=1:产生的是新的随机数
                                         flag=0:新产生的随机数已经存在*/
@@ -56,4 +57,4 @@ int comp(const void *j,const void *i)     /*qsort调用的排序函数*/
 {
    return(*(int*)i-*(int*)j);
 }
-
+

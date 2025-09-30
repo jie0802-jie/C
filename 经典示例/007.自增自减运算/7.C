@@ -1,6 +1,6 @@
 /* */
 #include <stdio.h>
-main()
+int main()
 {
 	int a=5,b,c,i=10;
 	b=a++;
@@ -15,4 +15,4 @@ main()
 	printf("%d\n",-i++);
 	printf("%d\n",-i--);
 	getchar();
-}
+}

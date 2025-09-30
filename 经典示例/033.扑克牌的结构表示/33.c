@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <string.h>
 enum suits{CLUBS,DIAMONDS,HEARTS,SPADES};
 struct card
 {
@@ -12,7 +14,7 @@ main()
 {
 	int i,j;
 	enum suits s;
-	clrscr();
+	system("cls");
 	for(i=0;i<=12;i++)
 		for(s=CLUBS;s<=SPADES;s++)
 		{
@@ -25,4 +27,4 @@ main()
 	puts("\nPress any key to quit...");
 	getch();
 }
-
+

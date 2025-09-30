@@ -2,7 +2,7 @@
 void main()
 {
    int n,i,j,un1,un2,un;
-   clrscr();
+   system("cls");
    puts("********************************************************");
    puts("*   This is a program to Calculate Rabbits Numbers.    *");
    puts("* There is a rabbit couple procreats 2 rabbits 1 month,*");
@@ -31,4 +31,3 @@ void main()
    printf("\n Press any key to quit...");
    getch();
 }
-

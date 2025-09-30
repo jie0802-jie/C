@@ -16,7 +16,7 @@
 char token; /*全局标志变量*/
 
 /*递归调用的函数原型*/
-int exp( void );
+int exprt( void );
 int term( void );
 int factor( void );
 
@@ -46,7 +46,7 @@ main()
 	printf(" >> 请输入表达式: ");
 	token = getchar(); /*载入第一个符号*/
 	
-	result = exp(); /*进行计算*/
+	result = exprt(); /*进行计算*/
 	if( token == '\n' ) /* 是否一行结束 */
 		printf( " >> 表达式的计算结果为 : %d\n", result );
 	else error(); /* 出现了例外的字符 */
@@ -55,7 +55,7 @@ main()
 	return 0;
 }
 
-int exp( void )
+int exprt( void )
 {
 	int temp = term(); /*计算比加减运算优先级别高的部分*/
 	while(( token == '+' ) || ( token == '-' ))
@@ -98,7 +98,7 @@ int factor( void )
 	if( token == '(' ) /*带有括号的运算*/
 	{
 		match( '(' );
-		temp = exp();
+		temp = exprt();
 		match(')');
 	}
 	else if ( isdigit( token )) /*实际的数字*/

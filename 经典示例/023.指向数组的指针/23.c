@@ -1,10 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
 int a[ ]={1,2,3,4,5};
 #define N sizeof a/sizeof a[0]
 main()
 {
 	int j,   /*游标变量*/
 	      *p; /*指针变量*/
-	clrscr();
+	system("cls");
 	for(j=0;j<N;j++)/*数组名和下标顺序访问数组的元素*/
 		printf("a[%d]\t= %d\t",j,a[j]);
 	printf("\n");
@@ -18,4 +20,4 @@ main()
 		printf("p[-%d]\t= %d\t",j,p[-j]);
 	printf("\nPress any key to quit...\n");
 	getch();
-}
+}

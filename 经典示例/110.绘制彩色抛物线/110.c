@@ -1,5 +1,6 @@
 #include <graphics.h>
 #include <math.h>
+#include <stdio.h>
 
 /*画抛物线的子函数spara()*/
 /*row,col代表抛物线顶点的坐标，x1,y1是抛物线起点相对顶点的坐标*/
@@ -55,7 +56,7 @@ int row,col,x1,y1,t,color;
 void main()
 {
   int i,color;
-  int gdriver = DETECT , gmode;
+  int gdriver = DETECT, gmode;
   color = 1;
   registerbgidriver(EGAVGA_driver);
   initgraph(&gdriver,&gmode,"..\\bgi");			/*初始化图形界面*/

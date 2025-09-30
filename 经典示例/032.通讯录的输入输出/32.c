@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
 #define ZIPLEN 10
 #define PHONLEN 15
 /*struct addr类型定义*/
@@ -15,7 +17,7 @@ main()/*本主函数示意上述输入输出函数的用法*/
 {
 	struct addr p[100];
 	int i,j;
-	clrscr();
+	system("cls");
 	for(i=0;readaddr(p+i);i++);
 	for(j=0;j<i;j++) writeaddr(p+j);
 	puts("\n Press any key to quit...");
@@ -77,4 +79,4 @@ int writeaddr(struct addr*dpt)
 	printf("Zip	:   %s\n",	dpt->zip);/*输出邮编*/
 	printf("Phone	:   %s\n\n",	dpt->phone);/*输出电话号码*/
 }
-
+

@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define MAX 20
 int search(int *apt,/*已知数表的首元指针*/
 	int n,/*数表中元素个数*/
@@ -25,7 +26,7 @@ int a[]={90,80,70,60,50,40,30,20,10,9,8,7,6,5,42,40,50,1,2,3};
 main()
 {
 	int i,key;
-	clrscr();
+	system("cls");
 	printf("The elements of array a is:\n");
 	for(i=0;i<sizeof(a)/sizeof(a[0]);i++)
 		printf(" %d",a[i]);
@@ -40,4 +41,3 @@ main()
 	getch();
 }
 
-
